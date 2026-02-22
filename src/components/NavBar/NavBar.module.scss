@@ -1,0 +1,169 @@
+@use '../../styles/variaveis' as*;
+
+.NavBarHeader {
+  background-color: $colorAzul;
+  display: flex;  
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+  //padding: 0 4rem;
+
+  /* Logo - Connect */
+    .Logo, img {
+      height: 1.5rem;
+
+         &:hover{
+          transform: scale(1.1);
+         }
+        
+
+    }
+}
+
+/* Menu */
+.ListaNavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60vw;
+ 
+
+    .ListaItemNavBar {
+        color: $colorBranco;
+        font-family: $fonteSecundaria;
+        font-size: 0.6rem;
+
+        &:hover{
+          color: $colorAzulClaro;
+        }
+
+    }
+
+}
+
+/* Perfil */
+.Perfil {
+  display: flex;
+  align-items: center;
+  z-index: 9999 !important;
+
+  .ImgPerfil {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 0.2rem solid $colorAzulClaro;
+    object-fit: cover;
+    
+      &:hover{
+        box-shadow: 0.1rem 0.1rem 0.5rem #000000;
+        transform: scale(1.1);
+    
+      }
+  }
+}
+
+// Responsividade Tablet
+
+@media(min-width:501px) and (max-width: 900px){
+    .NavBarHeader {
+
+        .Logo, img {
+        height: 3rem;
+
+        }
+    }
+
+    /* Menu */
+    .ListaNavBar {
+  
+        .ListaItemNavBar {
+          font-size: 1.3rem;
+        }
+
+    }
+
+    /* Perfil */
+    .Perfil {
+
+      .ImgPerfil {
+        width: 5rem;
+        height: 5rem;
+        border: 0.35rem solid $colorAzulClaro;
+
+      }
+    }
+}
+
+
+// Responsividade Laptop/Notebook 
+
+
+@media(min-width:901px) and (max-width: 1728px){
+     .NavBarHeader {
+      height: 15vh;
+      justify-content: space-around;
+      
+        .Logo, img {
+          height: 4rem;
+
+        }
+    }
+
+    /* Menu */
+    .ListaNavBar {
+  
+        .ListaItemNavBar {
+          font-size: 1.3rem;
+        }
+
+    }
+
+    /* Perfil */
+    .Perfil {
+
+      .ImgPerfil {
+        width: 5rem;
+        height: 5rem;
+        border: 0.35rem solid $colorAzulClaro;
+
+      }
+    }
+
+
+}
+
+
+// Responsividade Desktop 
+
+@media(min-width:1729px) and (max-width: 2048px){
+    .NavBarHeader {
+      height: 10vh;
+      justify-content: space-around;
+
+        .Logo, img {
+          height: 3.5rem;
+
+        }
+    }
+
+    /* Menu */
+    .ListaNavBar {
+  
+        .ListaItemNavBar {
+          font-size: 1.7rem;
+        }
+
+    }
+
+    /* Perfil */
+    .Perfil {
+
+      .ImgPerfil {
+        width: 4.5rem;
+        height: 4.5rem;
+        border: 0.25rem solid $colorAzulClaro;
+
+      }
+    }
+}
+

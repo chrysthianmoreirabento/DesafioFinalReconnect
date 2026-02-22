@@ -1,0 +1,145 @@
+@use "../../styles/variaveis" as*;
+
+.containerQuemSomos{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    
+    
+}
+
+.boxTextosQuemSomos{
+    height: 85vh;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+    h2{
+        font-size: 2.2rem;
+        font-family: $fontePrincipal;
+        color: $colorAzul;
+        text-align: center;
+    }
+
+    p{
+        font-size: 0.95rem;
+        font-family: $fonteSecundaria;
+        text-align: center;
+    }
+}
+
+// Responsividade Tablet
+
+@media(min-width:501px) and (max-width: 900px){
+        .containerQuemSomos{
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+            
+            
+        }
+
+        .boxTextosQuemSomos{
+            height: 85vh;
+            width: 92%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            
+
+            h2{
+                font-size: 4.5rem;
+            }
+
+            p{
+                font-size: 2rem;
+            }
+        }
+}
+
+
+// Responsividade Laptop/Notebook
+
+@media(min-width:901px) and (max-width: 1728px){
+        .containerQuemSomos{
+            height: 80vh;
+            background-image: url("../../assets//backgroundQuemSomos.png");
+            background-repeat: no-repeat;
+            background-size: 100% 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 0 5rem 0 0;  
+            
+        }
+
+        .boxTextosQuemSomos{
+            width: 31%;
+            height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            h2{
+                font-size: 2.3rem;
+                font-family: $fontePrincipal;
+                color: $colorAzul;
+                text-align: left;
+            }
+
+            p{
+                font-size: 0.9rem;
+                font-family: $fonteSecundaria;
+                text-align: left;
+            }
+        }
+
+}
+
+
+// Responsividade Desktop 
+
+@media(min-width:1729px) and (max-width: 2048px){
+        .containerQuemSomos{
+            height: 80vh;
+            background-image: url("../../assets//backgroundQuemSomos.png");
+            background-repeat: no-repeat;
+            background-size: 100% 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 0 5rem 0 0;  
+            
+        }
+
+        .boxTextosQuemSomos{
+            width: 31%;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            h2{
+                font-size: 3rem;
+                font-family: $fontePrincipal;
+                color: $colorAzul;
+                text-align: left;
+            }
+
+            p{
+                font-size: 1.35rem;
+                font-family: $fonteSecundaria;
+                text-align: left;
+            }
+        }
+}
+
+

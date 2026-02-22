@@ -1,0 +1,268 @@
+@use "../../styles/variaveis" as*;
+
+.SectionPerfil{
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem ;
+    
+
+    .FotoPerfil{
+        border-radius: 100%;
+        border: 0.5rem solid $colorAzulClaro;
+        width: 60%;
+    }
+
+}
+
+.DescricaoPerfil{
+    text-align: center;
+
+    
+
+    h2{
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        font-family: $fonteSecundaria;
+    }
+
+    h4{
+        font-size: 1rem;
+        font-family: $fonteSecundaria;
+        color: $colorVerdeEscura;
+        
+    }
+
+    .TextoDescricao{
+        font-size: 1.1rem;
+        margin: 1rem 0;
+        font-family: $fonteSecundaria;
+    }
+}
+
+.Endereco{
+    font-size: 1rem;
+    font-style: normal;
+    margin-bottom: 2rem;
+    font-family: $fonteSecundaria;
+}
+
+.ListTags{
+    display: flex;
+    justify-content: center;
+
+    .ListTagsItens{
+        font-size: 0.8rem;
+        margin: 0 auto;
+        background-color: $colorVerdeClaro;
+        color: $colorVerdeEscura;
+        padding: 0.2rem;
+        border-radius: 0.5rem;        
+        font-family: $fonteSecundaria;
+    }
+}
+
+
+// Responsividade Tablet
+
+@media(min-width:501px) and (max-width: 900px){
+      .SectionPerfil{
+            height: 98vh;
+            padding: 2.5rem 1rem ;
+            
+
+            .FotoPerfil{
+                border: 0.8rem solid $colorAzulClaro;
+                
+            }
+
+      }
+
+        .DescricaoPerfil{            
+
+            h2{
+                font-size: 2.5rem;
+                margin: 1.3rem 0;
+            }
+
+            h4{
+                font-size: 1.7rem;
+                
+            }
+
+            .TextoDescricao{
+                font-size: 2.5rem;
+                margin: 1.5rem 0;
+            }
+        }
+
+        .Endereco{
+            font-size: 2.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .ListTags{
+            margin-top: 3rem;
+
+            .ListTagsItens{
+                font-size: 1.5rem;
+                margin: 0 1rem;
+                background-color: $colorVerdeClaro;
+                color: $colorVerdeEscura;
+                padding: 0.4rem;
+                border-radius: 0.7rem;
+            }
+        }
+}
+
+
+// Responsividade Laptop/Notebook 
+
+@media(min-width:901px) and (max-width: 1728px){
+        .SectionPerfil{
+            height: 80vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+
+            .FotoPerfil{
+                border: 0.5rem solid $colorAzulClaro;
+                width: 25%;
+            }
+
+        }
+
+        .DescricaoPerfil{
+            width: 50%;
+            text-align: center;
+            margin: 0.6rem 0 0.6rem 2.8rem;
+            
+            
+
+            h2{
+                font-size: 1.8rem;
+                margin: 0.8rem 0;
+            }
+
+            h4{
+                font-size: 1.2rem;
+                
+            }
+
+            .TextoDescricao{
+                font-size: 0.95rem;
+                margin: 0.6rem 0 0.6rem 1rem;
+                text-align: left;
+            }
+        }
+
+        .Endereco{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            margin-bottom: 1.7rem;
+
+            .EnderecoItem{
+                margin: 0 0.3rem;
+            }
+        }
+
+        .ListTags{
+            margin-top: 2rem;
+
+            .ListTagsItens{
+                font-size: 0.8rem;
+                margin: 0 0.5rem;
+                background-color: $colorVerdeClaro;
+                color: $colorVerdeEscura;
+                padding: 0.5rem;
+                border-radius: 0.7rem;
+
+                &:hover{
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+
+}
+
+
+// Responsividade Desktop
+
+@media(min-width:1729px) and (max-width: 2048px){
+        .SectionPerfil{
+            height: 80vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+
+            .FotoPerfil{
+                border: 0.5rem solid $colorAzulClaro;
+                width: 25%;
+            }
+
+        }
+
+        .DescricaoPerfil{
+            width: 50%;
+            text-align: center;
+            margin: 0.6rem 0 0.6rem 2.8rem;
+            
+            
+
+            h2{
+                font-size: 1.8rem;
+                margin: 0.8rem 0;
+            }
+
+            h4{
+                font-size: 1.2rem;
+                
+            }
+
+            .TextoDescricao{
+                font-size: 1.3rem;
+                margin: 0.6rem 0 0.6rem 1rem;
+                text-align: left;
+            }
+        }
+
+        .Endereco{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            margin-bottom: 1.7rem;
+
+            .EnderecoItem{
+                margin: 0 0.3rem;
+            }
+        }
+
+        .ListTags{
+            margin-top: 2rem;
+
+            .ListTagsItens{
+                font-size: 0.8rem;
+                margin: 0 0.5rem;
+                background-color: $colorVerdeClaro;
+                color: $colorVerdeEscura;
+                padding: 0.5rem;
+                border-radius: 0.7rem;
+
+                &:hover{
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+}
+
+

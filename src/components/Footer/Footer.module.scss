@@ -1,0 +1,220 @@
+
+@use'../../styles/variaveis' as*;
+
+.FooterSection{
+    background-color: $colorAzul;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    height: 30vh;
+    padding: 0 1.5rem;
+
+    .LogoConnect{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        width: 60%;
+        font-family: $fonteSecundaria;
+        color: $colorBranco;
+
+        img{
+          height: 3.13rem;
+        }
+
+        .TextoLogo{
+          font-size: 1.5rem;
+        }
+
+        
+    }
+
+    .DireitosReservados{
+        width: 100%;
+
+        p{
+          font-size: 0.7rem;
+          font-family: $fonteSecundaria;
+          text-align: center;
+          color: $colorBranco;
+        }
+    }
+
+  
+}
+
+.RedesSociaisLista{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 65%;
+  
+    .RedesSociaisItem{
+        width: 2rem;
+
+        &:hover{
+            
+            transform: scale(1.2);
+        }
+
+    }
+
+}
+
+
+
+// Responsividade Tablet
+
+@media(min-width:501px) and (max-width: 900px){
+      .FooterSection{
+          height: 30vh;
+          //padding: 0 1.5rem;
+
+          .LogoConnect{
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+              width: 45%;
+
+              img{
+                height: 4rem;
+              }
+
+              .TextoLogo{
+                font-size: 3rem;
+              }
+
+              
+          }
+
+          .DireitosReservados{
+              width: 95%;
+
+              p{
+                font-size: 1.5rem;
+              }
+          }
+
+        
+      }
+
+      .RedesSociaisLista{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+        
+          .RedesSociaisItem{
+              width: 3.5rem;
+
+          }
+
+      }
+
+     
+}
+
+
+// Responsividade Laptop/Notebook 
+@media(min-width:901px) and (max-width: 1728px){
+        .FooterSection{
+            height: 15vh;
+            flex-direction: row;
+            align-items: center;          
+            justify-content: space-between;
+            padding-top: 0.5rem;
+
+            .LogoConnect{
+                width: 18%;
+
+                img{
+                  height: 3rem;
+                }
+
+                .TextoLogo{
+                  font-size: 1.8rem;
+                }
+
+                
+            }
+
+            .DireitosReservados{
+                width: 40%;
+                height: 8vh;
+
+                p{
+                  font-size: 1rem;
+                }
+            }
+
+          
+        }
+
+        .RedesSociaisLista{
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          width: 15%;
+          
+            .RedesSociaisItem{
+                width: 1.8rem;
+
+            }
+
+        }
+
+}
+
+
+// Responsividade Desktop
+
+@media(min-width:1729px) and (max-width: 2048px){
+          .FooterSection{
+            height: 10vh;
+            flex-direction: row;
+            align-items: center;          
+            justify-content: space-between;
+            padding-top: 0.5rem;
+
+            .LogoConnect{
+                width: 18%;
+
+                img{
+                  height: 3rem;
+                }
+
+                .TextoLogo{
+                  font-size: 1.8rem;
+                }
+
+                
+            }
+
+            .DireitosReservados{
+                width: 28%;
+                height: 5vh;
+
+                p{
+                  font-size: 1rem;
+                }
+            }
+
+          
+        }
+
+        .RedesSociaisLista{
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          width: 12%;
+          
+            .RedesSociaisItem{
+                width: 3rem;
+
+            }
+
+        }
+}
+
+

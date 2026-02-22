@@ -1,0 +1,306 @@
+@use'../../styles/variaveis' as*;
+
+.SectionAcoes{
+    height: 365vh;
+    
+}
+
+.BoxTitulos{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    h2{
+        color: $colorAzul;
+        font-family: $fontePrincipal;
+        font-size: 1.9rem;
+    }
+
+    p{
+        font-family: $fonteSecundaria;
+        text-align: center;
+        font-size: 1rem;
+        width: 90%;
+    }
+}
+
+.ContainerCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 55vh;
+    width: 95%;
+    border-radius: 1vh;
+
+    &:hover{
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    }
+
+  img {
+    height: 20vh;
+  }
+
+  h2{
+    font-family: $fontePrincipal;
+    color: $colorAzul;
+    font-size: 1.8rem;
+
+  }
+
+  p{
+    font-family: $fonteSecundaria;
+    text-align: center;
+    font-size: 0.92rem;
+    width: 95%;
+  }
+
+  button{
+    border: none;
+    border-radius: 1vh;
+    background-color: $colorAzul;
+    padding: 0.5rem 1rem;
+    font-family: $fontePrincipal;
+    font-size: 1rem;
+    color: $colorBranco;
+    cursor: pointer;
+
+    &:hover{
+        
+        transform: scale(1.1);
+    }
+  }
+}
+
+// Responsividade Tablet
+
+@media(min-width:501px) and (max-width: 900px){
+        .SectionAcoes{
+            height: 500vh;
+            
+        }
+
+        .BoxTitulos{
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            h2{
+                font-size: 4rem;
+            }
+
+            p{
+                font-size: 2.3rem;
+            }
+        }
+
+        .ContainerCards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .Cards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 75vh;
+
+        img {
+            height: 27vh;
+        }
+
+        h2{
+            font-size: 3.5rem;
+
+        }
+
+        p{
+            font-size: 2.1rem;
+            width: 90%;
+        }
+
+        button{
+            border-radius: 1.5vh;
+            padding: 1rem 2rem;
+            font-size: 2.5rem;
+           
+
+
+        }
+
+    }
+}
+
+// Responsividade Laptop/Notebook
+@media(min-width:901px) and (max-width: 1728px){
+        .SectionAcoes{
+            height: 160vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .BoxTitulos{
+            height: 25vh;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 3.5rem;
+            margin-bottom: 2.5rem;
+
+            h2{
+                font-size: 3rem;
+            }
+
+            p{
+                font-size: 1.3rem;
+            }
+        }
+
+        .ContainerCards{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        .Cards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 55vh;
+            width: 23%;
+            margin: 1rem;
+
+            img {
+                height: 23vh;
+            }
+
+            h2{
+                font-size: 1.5rem;
+
+            }
+
+            p{
+                font-size: 0.78rem;
+                width: 90%;
+                margin-bottom: 1rem;
+            }
+
+            button{
+                border-radius: 1.5vh;
+                padding: 0.3rem 0.6rem;
+                font-size: 1.3rem;
+            
+
+
+            }
+
+        }
+}
+
+
+// Responsividade Desktop
+
+@media(min-width:1729px) and (max-width: 2048px){
+        .SectionAcoes{
+            height: 145vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .BoxTitulos{
+            height: 25vh;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 3.5rem;
+            margin-bottom: 2.5rem;
+
+            h2{
+                font-size: 3rem;
+            }
+
+            p{
+                font-size: 1.3rem;
+            }
+        }
+
+        .ContainerCards{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 80%;
+
+        }
+
+        .Cards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 50vh;
+            width: 23%;
+            margin: 1rem;
+
+            
+                &:hover{
+                    box-shadow: none;
+                }
+
+            img {
+                height: 33%;
+            }
+
+            h2{
+                font-size: 1.5rem;
+
+            }
+
+            p{
+                font-size: 0.88rem;
+                width: 90%;
+                margin-bottom: 1rem;
+            }
+
+            button{
+                border-radius: 1vh;
+                padding: 0.6rem 1rem;
+                font-size: 1.3rem;
+            
+
+
+            }
+
+        }
+}
+
+
